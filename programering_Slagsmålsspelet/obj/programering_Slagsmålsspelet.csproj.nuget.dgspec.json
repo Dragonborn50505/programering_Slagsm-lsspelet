@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj": {}
+    "C:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj": {}
   },
   "projects": {
-    "c:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj": {
+    "C:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj",
+        "projectUniqueName": "C:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj",
         "projectName": "programering_Slagsmålsspelet",
-        "projectPath": "c:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj",
+        "projectPath": "C:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet.csproj",
         "packagesPath": "C:\\Users\\allinggard.vincent\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\obj\\",
+        "outputPath": "C:\\Users\\allinggard.vincent\\Desktop\\Programering\\programering_Slagsmålsspelet\\programering_Slagsmålsspelet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\allinggard.vincent\\AppData\\Roaming\\NuGet\\NuGet.Config"

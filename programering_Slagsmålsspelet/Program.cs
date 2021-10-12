@@ -1,52 +1,167 @@
 ﻿using System;
 
+Console.WriteLine("Please write your fighter´s name:");
+
+string name;
+
+name = "Vincent";
+
+name = Console.ReadLine();
+
+string ai = "";
+// string ai_number;
 
 Random generator = new Random();
 
+int ai_number = generator.Next(1, 4);
 
-int hp_Isak = 100;
-int hp_Jonathan = 100;
+
+
+if (ai_number == 1)
+{
+    ai = "Putin";
+}
+if (ai_number == 2)
+{
+    ai = "Napoleon";
+}
+if (ai_number == 3)
+{
+    ai = "George Washington";
+}
+
+
+
+
+int hp_ai = 100;
+int hp_name = 100;
 
 Console.WriteLine(@"
-       _.---._    /\\
-    ./'       '--`\//
-  ./              o \
- /./\  )______   \__ \
-./  / /\ \   | \ \  \ \
-   / /  \ \  | |\ \  \7
+      MMMMMMMM
+      |      |
+     @  O  O  @
+      |  ~   |         \__
+       \ -- /          |\ |
+     ___|  |___        | \|
+    /          \      /|__|
+   /            \    / /
+  /  /| .  . |\  \  / /
+ /  / |      | \  \/ /
+<  <  |      |  \   /
+ \  \ |  .   |   \_/
+  \  \|______|
+    \_|______|
+      |      |
+      |  |   |
+      |  |   |
+      |__|___|
+      |  |  |
+      (  (  |
+      |  |  |
+      |  |  |
+     _|  |  |
 ");
 
-while (hp_Isak > 0 && hp_Jonathan > 0)
+if(ai_number == 1)
 {
-    int damage = 10  + generator.Next(0, 21);
-    Console.WriteLine($"Jonathan hit Isak and dealt {damage} damage");
-    hp_Isak -= damage;
+Console.WriteLine(@"
+⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠋⠁⣴⣶⣿⣿⣿⣿⣿⣿⣿⣦⣍⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⢷⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⢼⣿⣿⣿⣿
+⢹⣿⣿⢻⠎⠔⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿
+⢸⣿⣿⠇⡶⠄⣿⣿⠿⠟⡛⠛⠻⣿⡿⠿⠿⣿⣗⢣⣿⣿⣿⣿
+⠐⣿⣿⡿⣷⣾⣿⣿⣿⣾⣶⣶⣶⣿⣁⣔⣤⣀⣼⢲⣿⣿⣿⣿
+⠄⣿⣿⣿⣿⣾⣟⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢟⣾⣿⣿⣿⣿
+⠄⣟⣿⣿⣿⡷⣿⣿⣿⣿⣿⣮⣽⠛⢻⣽⣿⡇⣾⣿⣿⣿⣿⣿
+⠄⢻⣿⣿⣿⡷⠻⢻⡻⣯⣝⢿⣟⣛⣛⣛⠝⢻⣿⣿⣿⣿⣿⣿
+⠄⠸⣿⣿⡟⣹⣦⠄⠋⠻⢿⣶⣶⣶⡾⠃⡂⢾⣿⣿⣿⣿⣿⣿
+⠄⠄⠟⠋⠄⢻⣿⣧⣲⡀⡀⠄⠉⠱⣠⣾⡇⠄⠉⠛⢿⣿⣿⣿
+⠄⠄⠄⠄⠄⠈⣿⣿⣿⣷⣿⣿⢾⣾⣿⣿⣇⠄⠄⠄⠄⠄⠉⠉
+⠄⠄⠄⠄⠄⠄⠸⣿⣿⠟⠃⠄⠄⢈⣻⣿⣿⠄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⢿⣿⣾⣷⡄⠄⢾⣿⣿⣿⡄⠄⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⠸⣿⣿⣿⠃⠄⠈⢿⣿⣿⠄⠄⠄⠄⠄⠄⠄
+
+");
+}
+
+if(ai_number == 2)
+{
+Console.WriteLine(@"
+       .-´´´´´-.
+    .-´         ´-.
+ __/               \__
+ \     .-´´´´´-.     /
+  '----//o   o\\----'
+      (    _\   )
+  ,____`\  =  /`____,
+// \   `;'---' `   / \
+\\/     |-o        \//
+|    |  |      |     |
+|    |  |-o    |\    |
+\    `--|      |/    /
+ '._    |-o    |    /
+    '|´´|      |  .'
+     |  |-o    |-`
+     |  |      |
+     |_/ \_____|
+      |   |   |
+      |   |   |
+      \'-.|.-'/
+      ]  _|_  [
+     /    |    \
+    /    / \    \
+   (___/`   `\___)
+");
+}
+
+if(ai_number == 3)
+{
+Console.WriteLine(@"
+    .-'~´-. 
+    / `-    \ 
+   />  `.  -.| 
+  /_     '-.__) 
+   |-  _.' \ | 
+   `~~:     \\ 
+      /      \\)
+     '.___.-'`´
+
+");
+}
+
+
+while (hp_ai > 0 && hp_name > 0)
+{
+    int damage = 10 + generator.Next(0, 21);
+    Console.WriteLine($"{name} hit {ai} and dealt {damage} damage");
+    hp_ai -= damage;
     Console.ReadLine();
     damage = 0;
 
 
     damage = 10 + generator.Next(0, 21);
-    Console.WriteLine($"Isak hit Jonathan and dealt {damage} damage");
-    hp_Jonathan -= damage;
+    Console.WriteLine($"{ai} hit {name} and dealt {damage} damage");
+    hp_name -= damage;
     Console.ReadLine();
 }
 
 
-if (hp_Isak <= 1)
+if (hp_ai <= 1)
 {
-    Console.WriteLine("Game! Isak KO Jonathan");
+    Console.WriteLine($"Game! {ai} KO {name}");
     Console.ReadLine();
 
 }
 
-if (hp_Jonathan <= 1)
+if (hp_name <= 1)
 {
-    Console.WriteLine("Game! Jonathan KO Isak");
+    Console.WriteLine($"Game! {name} KO {ai}");
     Console.ReadLine();
 
 }
 
-if (hp_Isak <= 0 && hp_Jonathan <= 0)
+if (hp_ai <= 0 && hp_name <= 0)
 {
     Console.WriteLine("Double KO, both fighters are down");
     Console.ReadLine();

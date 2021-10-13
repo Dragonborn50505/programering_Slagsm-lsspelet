@@ -161,7 +161,7 @@ while (restart == "yes")
     while (hp_ai > 0 && hp_name > 0)
     {
 
-
+        Console.WriteLine($"{ai} hp = {hp_ai}, {name} hp = {hp_name}");
         Console.WriteLine($"Ska {name} 1) slå eller 2) sparka");
 
         name_choice = "";
@@ -259,12 +259,12 @@ while (restart == "yes")
     {
         if (money == ai)
         {
-            Console.WriteLine($"Game! {ai} KO {name}, You got 200 dollars");
+            Console.WriteLine($"Game! {name} KO {ai}, You got 200 dollars");
             Console.ReadLine();
         }
         else
         {
-            Console.WriteLine($"Game! {ai} KO {name}, You lost your money");
+            Console.WriteLine($"Game! {name} KO {ai}, You lost your money");
             Console.ReadLine();
         }
     }
@@ -273,7 +273,7 @@ while (restart == "yes")
     {
         if (money == name)
         {
-            Console.WriteLine($"Game! {name} KO {ai},You got 200 dollars ");
+            Console.WriteLine($"Game! {ai} KO {name},You got 200 dollars ");
             Console.ReadLine();
         }
         else

@@ -42,8 +42,8 @@ while (restart == "yes")
 
     //________________________________________________________________________________
 
-    int hp_ai = 100;
-    int hp_name = 100;
+    int hp_ai = 200;
+    int hp_name = 200;
 
     //________________________________________________________________________________
 
@@ -151,10 +151,10 @@ while (restart == "yes")
 
     if (bonus == "resilient") //Spelet gör det enklare för spelaren att vinna genom en bonus så inte han slutar lämmnar spelet
     {
-        hp_name = 150;
+        hp_name = 225;
     }
     else {
-        strong = 10;
+        strong = 5;
     }
 
 
@@ -182,9 +182,9 @@ while (restart == "yes")
             }
             else
             {
-                int damage = 20 + generator.Next(0, 26);
+                int damage = 20 + generator.Next(0, 26) + strong;
                 Console.WriteLine($"{name} kicked {ai} and dealt {damage} damage");
-                hp_ai -= damage + strong;
+                hp_ai -= damage;
                 damage = 0;
             }
         }
@@ -202,9 +202,9 @@ while (restart == "yes")
             }
             else
             {
-                int damage = 10 + generator.Next(0, 21);
+                int damage = 10 + generator.Next(0, 21) + strong;
                 Console.WriteLine($"{name} hit {ai} and dealt {damage} damage");
-                hp_ai -= damage + strong;
+                hp_ai -= damage;
                 //Console.ReadLine();
                 damage = 0;
             }
@@ -215,7 +215,7 @@ while (restart == "yes")
 
         if (ai_choice == 1)
         {
-            int KickOrMissAI = generator.Next(1, 5);
+            int KickOrMissAI = generator.Next(1, 12);//ai förlorade för mycket så gode de lite bättre
 
             if (KickOrMissAI == 1)
             {
@@ -226,7 +226,7 @@ while (restart == "yes")
             {
                 int damage = 20 + generator.Next(0, 26);
                 Console.WriteLine($"{ai} kicked {name} and dealt {damage} damage");
-                hp_ai -= damage;
+                hp_name -= damage;
                 //Console.ReadLine();
                 damage = 0;
             }
@@ -236,7 +236,7 @@ while (restart == "yes")
 
         else
         {
-            int HitOrMissAI = generator.Next(1, 11);
+            int HitOrMissAI = generator.Next(1, 21);
 
             if (HitOrMissAI == 1)
             {
@@ -249,6 +249,7 @@ while (restart == "yes")
                 int damage = 10 + generator.Next(0, 21);
                 Console.WriteLine($"{ai} hit {name} and dealt {damage} damage");
                 hp_name -= damage;
+                damage = 0;
                 //Console.ReadLine();
             }
         }
@@ -257,7 +258,7 @@ while (restart == "yes")
     }
     if (hp_ai <= 1)
     {
-        if (money == ai)
+        if (money == name)
         {
             Console.WriteLine($"Game! {name} KO {ai}, You got 200 dollars");
             Console.ReadLine();
@@ -271,7 +272,7 @@ while (restart == "yes")
     //________________________________________________________________________________
     if (hp_name <= 1)
     {
-        if (money == name)
+        if (money == ai)
         {
             Console.WriteLine($"Game! {ai} KO {name},You got 200 dollars ");
             Console.ReadLine();

@@ -136,7 +136,7 @@ while (restart == "yes")
     //________________________________________________________________________________
 
     money = "";
-    Console.WriteLine($"{ name} will be fighting {ai}! You have 100 dollars, who will you set your money on?");
+    Console.WriteLine($"{name} will be fighting {ai}! You have 100 dollars, who will you set your money on?");
 
     while (money != $"{name}" && money != $"{ai}")
     {
